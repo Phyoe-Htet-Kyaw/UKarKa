@@ -1,0 +1,557 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    color:#333;
+    font-family: Calibri;
+}
+
+/* backgrond-para start */
+.bg-img{
+    height:100%;
+    width: 100%;
+    background-image: url(../images/37.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.bg-para{
+    width:100%;
+    /* background-color: chocolate; */
+    text-align: center;
+    margin: 0 auto;
+    color:#fff;
+    font-weight: bold;
+    position: relative;
+    top:200px;
+}
+.bg-para .para1,.para2{
+    width:100%;
+}
+.bg-para .para1 h3{
+    font-size:33px;
+    text-shadow: 0 3px 5px #333;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+    /* background-color:#ff0; */
+}
+.bg-para .para2 h1{
+    font-size:60px;
+    letter-spacing: 7px;
+    padding:0.5%;
+    text-shadow: 3px 0 5px #333;
+}
+.bg-para .para2 h4{
+    text-transform: uppercase;
+    font-size:20px;
+    letter-spacing: 8px;
+    text-shadow: 2px 0 5px #333;
+}
+.bg-para .para2 p{
+    text-transform: capitalize;
+    font-size:18px;
+}
+/* background-para end */
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    /* background-color:#0ff; */
+}
+.container{
+    width:85%;
+    margin:0 auto;
+    /* background-color:#0f0; */
+}
+
+/* logo-bar start */
+.logo-img{
+    width:40%;
+}
+.logo-img img{
+    width:100%;
+}
+nav .nav-bar{
+    width: 100%;
+    /* background-color:rosybrown; */
+}
+ .nav-bar .dropdown{
+    width:500px;
+    height:100px;
+    position: relative;
+    padding:7% 0 4% 0;
+    text-align: right;
+    /* background-color:#f0f; */
+ } 
+
+.nav-bar .dropdown li{
+    width:60%;
+    text-transform: uppercase;
+    list-style:none;
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-shadow: 0 0 1px #333;
+    cursor: pointer;
+    /* background-color:#ff0; */
+}
+.nav-bar .dropdown li:nth-child(3){
+    width:80%;
+}
+.nav-bar .dropdown li:last-child{
+    width:70%;
+}
+.nav-bar .dropdown li:nth-child(4){
+    width:55%;
+}
+.nav-bar .dropdown li a{
+    width:100%;
+    color:#333;
+    text-decoration: none;
+}
+/* logo-bar end */
+/* ukarka start */
+.ukarka{
+    width: 100%;
+    padding-bottom: 5%;
+}
+.ukarka .ukarka-photo{
+    width:50%;
+}
+.ukarka .ukarka-photo img{
+    width:100%;
+}
+.ukarka .ukarka-para{
+    width: 50%;
+    padding-left:3%;
+}
+.ukarka .ukarka-para h2{
+    font-weight: normal;
+    padding-bottom: 8%;
+}
+.ukarka .ukarka-para p{
+    font-size:19px;
+    word-spacing: 3px;
+    font-weight: normal;
+    padding-bottom:7%;
+    text-align: justify;
+}
+.ukarka .ukarka-para button{
+    width:25%;
+    padding: 3%;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color:rgb(221, 213, 213);
+    border:none;
+    border-radius:2px;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+.ukarka .ukarka-para button:hover{
+    color:#fff;
+    background-color:#7ec527;
+}
+/* ukarka end */
+/* all products start */
+.all-product{
+    width:100%;
+    height:auto;
+    padding-top:5%;
+    padding-bottom: 10%;
+    /* background-color: #ff0; */
+}
+.all-product h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    padding-bottom: 3%;
+
+}
+.all {
+    width: 100%;
+    overflow: hidden;
+}
+.all-product-parent{
+    width:544%;
+    position: relative;
+    animation: children 15s infinite;
+}
+.all-product-children {
+    width:34%;
+    cursor: pointer;
+}
+.all-child{
+    justify-content: space-between;
+    padding-right:20px;;
+}
+.all-product-children .all-product-para{
+    width:100%;
+}
+.all-product-children .all-product-para p{
+    text-align: center;
+    padding:5%;
+    font-size: 18px;
+    color:#fff;
+    background-color: #7ec527;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.all-product-children .all-product-img{
+    width:100%;
+}
+.all-product-children .all-product-img img{
+    width:100%;
+    height:400px;
+}
+.all-product-children .all-product-para2{
+    width:100%;
+    background-color: #7ec527;
+    padding:3%;
+    font-weight: bold;
+}
+.all-product-children .all-product-para2 .p1{
+    color:rgb(23, 161, 155);
+}
+.all-product-children .all-product-para2 .p2{
+    color:#f00;
+}
+@keyframes children{
+    0%{
+        right: 0;
+    }
+    7%{
+        right:34%;
+    }
+    14%{
+        right:68%;
+    }
+    21%{
+        right: 102%;
+    }
+    28%{
+        right: 136%;
+    }
+    35%{
+        right:170%;
+    }
+    42%{
+        right:204%;
+    }
+    49%{
+        right: 238%;
+    }
+    56%{
+        right: 272%;
+    }
+    63%{
+        right:306%;
+    }
+    70%{
+        right:340%;
+    }
+    77%{
+        right: 374%;
+    }
+    84%{
+        right: 408%;
+    }
+    91%{
+        right: 442%;
+    }
+    100%{
+        right: 0;
+    }
+   
+}
+/* all products end */
+/* best-selling products start */
+.best-selling-products{
+    width:100%;
+    padding-bottom:10%;
+}
+.best-selling-products h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(214, 177, 97);
+    font-weight: bold;
+    font-size:25px;
+    letter-spacing: 1px;
+}
+.product{
+    width:100%;
+    padding-top:3%;
+}
+.product .product-para{
+    width: 47%;
+}
+.product .product-para h3{
+    padding-bottom:8%;
+    letter-spacing: 1px;
+}
+.product .product-para p{
+    font-size: 18px;
+    line-height: 31px;
+    text-align: justify;
+    /* font-weight: lighter; */
+}
+.product .product-para:first-child p{
+    padding-bottom:5%;
+}
+.product .product-img{
+    width: 49%;
+    line-height:0;
+}
+.product .product-img img{
+    width:100%;
+}
+/* product end */
+/* about start */
+
+.about{
+    width: 100%;
+    padding-bottom: 10%;
+}
+.about .about-para{
+    width:60%;
+    height:200px;
+    margin:0 auto;
+    /* background-color: #ff0; */
+    text-align: center;
+}
+.about .about-para h2{
+    color: #7ec527;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 4%;
+}
+.about .about-para h4{
+    font-size: 20px;
+}
+.box{
+    width: 100%;
+    padding-top:4%;
+    /* background-color: #ff0; */
+}
+.box .table{
+    width: 31.5%;
+    border:1px solid lightgray;
+    box-shadow: 5px 5px 5px lightgray;
+    padding: 4% 2.5%;
+}
+.box .table i{
+    font-size: 30px;
+    color:gray;
+    position: relative;
+    left: 130px;
+    bottom: 60px;
+    
+}
+.box .table h3{
+    text-align: center;
+    padding-bottom: 8%;
+}
+.box .table p{
+    line-height: 25px;
+    text-align: justify;
+}
+/* about end */
+
+/* bg-2 start */
+.bg-img-1{
+    height:75%;
+    width: 100%;
+    background-image: linear-gradient(#0009,#0009), url(../images/37.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.bg-img-1 .value{
+    color:#fff;
+    width:100%;
+    position: relative;
+    top:110px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #0f0; */
+}
+.bg-img-1 .value h1{
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 9%;
+}
+.bg-img-1 .value p{
+    font-size: 25px;
+    font-style: italic;
+    padding-bottom:10px;
+}
+.bg-img-1 .value span{
+    letter-spacing: 2px;
+}
+/* bg-2 end */
+
+/* ukarka contact start */
+.content{
+    width:100%;
+    background: #f00;
+}
+.ukarka-contact{
+    width: 100%;
+    height: 75%;
+    /* background-color: #ff0; */
+    
+}
+.ukarka-contact .ukarka-title{
+    width: 100%;
+    padding-bottom:3%;
+}
+.ukarka-contact .ukarka-title h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:5%;
+    text-align: center;
+    font-size:30px;
+    letter-spacing: 2px;
+}
+.ukarka-contact .contact-para{
+    width: 100%;
+    text-align:center;
+}   
+.ukarka-contact .contact-para .direction{
+    width: 33%;
+    /* border: 1px solid #333; */
+} 
+.ukarka-contact .contact-para .direction i{
+    font-size: 40px;
+}
+.ukarka-contact .contact-para .direction h3{
+    text-transform: uppercase;
+    padding-top:10%;
+    padding-bottom: 5%;
+}
+   /* ukarka contact end */
+
+/* information starts */
+.container-fluid-1{
+    width: 100%;
+    background-color: #333;
+}
+.information{
+    width: 100%;
+    height: 75%;
+    padding-bottom:10%;
+    padding-top:3%;
+    /* background-color:#ff0; */
+    justify-content: space-between;
+}
+.information .link{
+    width: 23%;
+    height:50%;
+}
+.information .link h4{
+    padding-bottom: 15%;
+    color:#fff;
+    text-transform: uppercase;
+}
+nav .nav-bar-mother .nav-bar-child{
+    width:100%;
+}
+nav .nav-bar-mother .nav-bar-child li{
+    /* border:1px double #333; */
+    width:50%;
+    list-style: none;
+    height:30%;
+    padding:5% 10%;
+    cursor: pointer;
+}
+nav .nav-bar-mother .nav-bar-child li a {
+    text-decoration: none;
+    color:gray;
+}
+nav .nav-bar-mother .nav-bar-child li a:hover{
+    color:rgb(32, 129, 32);
+    transition:0.2s ease;
+}
+.information .gallery{
+    width:30%;
+    /* background-color: #f00; */
+}
+.information .gallery h4{
+    width:100%;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom:10%;
+}
+.gallery .photo{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.gallery .photo img{
+    width: 32%;
+    padding-bottom:2%;
+    height:100px;
+}
+.information .foll{
+    width: 30%;
+    /* background-color: rosybrown; */
+    color:#fff;
+}
+.information .foll h4{
+    width: 100%;
+    text-transform: uppercase;
+}
+.information .foll i{
+    font-size: 40px;
+    width:15%;
+    cursor: pointer;
+    /* background-color: #f00; */
+    position: relative;
+    top:40px;
+    transition: 0.4s ease;
+}
+.information .foll i:hover{
+    color:rgb(145, 122, 122);
+}
+.information .foll p{
+    position: relative;
+    right: 220px;
+    top:50px;
+    color:rgb(180, 96, 35);
+    cursor: pointer;
+}
+.information .foll p:hover{
+    color:rgb(15, 97, 15);
+}
+/* information ends */
+/* summary start */
+.summary{
+    width: 100%;
+    background-color: #000;
+}
+.summary p{
+    width:40%;
+    /* background-color:#ff0; */
+    margin: 0 auto;
+    padding:3%;
+    text-align: center;
+}
+.summary p a{
+    text-decoration: none;
+}
+.summary p a:first-child{
+    color:#fff;
+}
+.summary p a:first-child:hover,.summary p a:last-child:hover{
+    color: rgb(6, 58, 6);
+    transition: 0.8s ease;
+}
+.summary p a:last-child{
+    color:#f00;
+}
+/* summary end */
